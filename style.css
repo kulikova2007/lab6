@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5a3540;
+  background-color: #fdf4f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка — на всю ширину окна */
+#site-header {
+  width: 100%;
+  background-color: #f6dde2;
+  padding: 15px 0;
+}
+
+.site-title {
+  margin: 0;
+  color: #a24d63;
+}
+
+/* Контент */
+#content {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#content h2 {
+  color: #a24d63;
+  border-bottom: 2px solid #eec2cd;
+  padding-bottom: 6px;
+}
+
+/* Форма */
+#calc-form {
+  background-color: #fdf1f3;
+  border: 1px solid #f0d3d9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+  max-width: 420px;
+}
+
+fieldset {
+  border: 1px solid #eec2cd;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+legend {
+  color: #a24d63;
+  font-weight: 500;
+  padding: 0 6px;
+}
+
+input[type="number"],
+select {
+  border: 1px solid #eec2cd;
+  border-radius: 4px;
+  padding: 8px;
+  font-family: inherit;
+  width: 100%;
+  max-width: 260px;
+}
+
+#options-block,
+#property-block {
+  margin-top: 10px;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 0.9em;
+  margin: 6px 0 0;
+}
+
+#result {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #a24d63;
+}
+
+/* Подвал — на всю ширину окна, внизу страницы */
+#site-footer {
+  width: 100%;
+  background-color: #f6dde2;
+  color: #5a3540;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#site-footer p {
+  margin: 0;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание 6 — Калькулятор стоимости услуги</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header id="site-header">
+    <div class="container">
+      <h1 class="site-title">Лабораторная работа 6</h1>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+
+    <h2>Калькулятор стоимости услуги</h2>
+
+    <form id="calc-form">
+
+      <label for="quantity">Количество:</label><br />
+      <input type="number" id="quantity" name="quantity" min="1" value="1" /><br /><br />
+
+      <fieldset>
+        <legend>Тип услуги:</legend>
+        <label>
+          <input type="radio" name="serviceType" value="1" checked />
+          Консультация — 500 ₽
+        </label><br />
+        <label>
+          <input type="radio" name="serviceType" value="2" />
+          Диагностика — 700 ₽ (с опциями)
+        </label><br />
+        <label>
+          <input type="radio" name="serviceType" value="3" />
+          Ремонт — 1200 ₽ (со свойством)
+        </label>
+      </fieldset>
+      <br />
+
+      <div id="options-block">
+        <label for="options">Опция диагностики:</label><br />
+        <select id="options" name="options">
+          <option value="basic">Базовая — без доплаты</option>
+          <option value="extended">Расширенная — +300 ₽</option>
+          <option value="premium">Премиум — +600 ₽</option>
+        </select>
+      </div>
+
+      <div id="property-block">
+        <label>
+          <input type="checkbox" id="urgent" name="urgent" />
+          Срочное выполнение (+400 ₽)
+        </label>
+      </div>
+
+    </form>
+
+    <p id="result"></p>
+
+  </main>
+
+  <footer id="site-footer">
+    <div class="container">
+      <p>&copy; Анастасия Куликова</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
