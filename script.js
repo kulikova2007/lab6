@@ -50,8 +50,8 @@ window.addEventListener('DOMContentLoaded', function () {
     var quantity = parseInt(quantityField.value, 10);
     var price = 0;
 
-    if (!quantity || quantity < 1) {
-      quantity = 1;
+    if (isNaN(quantity) || quantity < 0) {
+      quantity = 0;
     }
 
     if (serviceType !== null) {
